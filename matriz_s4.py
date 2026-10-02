@@ -84,7 +84,7 @@ if st.session_state.ticker_pool:
     selected_tickers = st.sidebar.multiselect(
         "Selecciona los tickers a comparar:",
         options=st.session_state.ticker_pool,
-        default=st.session_state.ticker_pool[:min(10, len(st.session_state.ticker_pool))]
+        default=st.session_state.ticker_pool
     )
 else:
     selected_tickers = []
